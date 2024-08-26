@@ -211,7 +211,7 @@
   content: "";
   width: 40px;
   height: 50px;
-  background: url("/img/next_con.png") no-repeat center/20px auto #fff;
+  background: url("../img/next_con.png") no-repeat center/20px auto #fff;
 }
 #product_detail .detail_area .f_box .swiper-container-wrapper .gallery-thumbs01 .swiper-button-prev {
   left: 0;
@@ -221,7 +221,7 @@
   content: "";
   width: 40px;
   height: 50px;
-  background: url("/img/prev_con.png") no-repeat center/20px auto #fff;
+  background: url("../img/prev_con.png") no-repeat center/20px auto #fff;
 }
 #product_detail .detail_area .f_box .swiper-container-wrapper .gallery-thumbs02 {
   position: relative;
@@ -241,7 +241,7 @@
   content: "";
   width: 40px;
   height: 50px;
-  background: url("/img/next_con.png") no-repeat center/20px auto #fff;
+  background: url("../img/next_con.png") no-repeat center/20px auto #fff;
 }
 #product_detail .detail_area .f_box .swiper-container-wrapper .gallery-thumbs02 .swiper-button-prev {
   left: 0;
@@ -251,7 +251,7 @@
   content: "";
   width: 40px;
   height: 50px;
-  background: url("/img/prev_con.png") no-repeat center/20px auto #fff;
+  background: url("../img/prev_con.png") no-repeat center/20px auto #fff;
 }
 #product_detail .detail_area .f_box .swiper-container-wrapper .gallery-thumbs03 {
   position: relative;
@@ -271,7 +271,7 @@
   content: "";
   width: 40px;
   height: 50px;
-  background: url("/img/next_con.png") no-repeat center/20px auto #fff;
+  background: url("../img/next_con.png") no-repeat center/20px auto #fff;
 }
 #product_detail .detail_area .f_box .swiper-container-wrapper .gallery-thumbs03 .swiper-button-prev {
   left: 0;
@@ -281,7 +281,7 @@
   content: "";
   width: 40px;
   height: 50px;
-  background: url("/img/prev_con.png") no-repeat center/20px auto #fff;
+  background: url("../img/prev_con.png") no-repeat center/20px auto #fff;
 }
 #product_detail .detail_area .f_box .detail_txt {
   width: 30%;
