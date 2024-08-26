@@ -1,7 +1,7 @@
 @import "_mixin";
 
 #main_visual{
-    background: url("/img/main_visual.jpg")no-repeat center/cover;
+    background: url("../img/main_visual.jpg")no-repeat center/cover;
     width: 100%;
     height:calc(100vh - 110px);
     .inner{
@@ -121,7 +121,7 @@
 }
 
 #depth02{
-    background: url("/img/center_banner.jpg")no-repeat center/cover;
+    background: url("../img/center_banner.jpg")no-repeat center/cover;
     width: 100%;
     padding: 60px 0;
     .txt{
