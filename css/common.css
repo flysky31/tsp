@@ -1,0 +1,504 @@
+@charset "UTF-8";
+body.scrolled .container header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+}
+body.scrolled .container header .f_sponsor .flow_banner .list > li {
+  padding: 0;
+}
+body.scrolled .container header .f_sponsor .flow_banner .list > li a {
+  font-size: 1rem;
+}
+body.scrolled .container header .my_box {
+  border-bottom: 1px solid #eee;
+}
+body.scrolled .container header .my_box ul {
+  padding: 5px 0;
+}
+body.scrolled .container header .navbar-toggler {
+  top: 35px;
+  right: 2%;
+}
+body.scrolled .container main {
+  margin: 150px 0 0;
+}
+body.scrolled .container aside {
+  position: fixed;
+  width: 12%;
+  height: 100%;
+  top: 100px;
+}
+.container {
+  grid-template-areas: "header header" "aside main" "footer footer";
+  grid-template-rows: 1fr 7.4fr 1fr;
+  grid-template-columns: 1fr 7.4fr;
+}
+.container header {
+  grid-area: header;
+  height: 100%;
+  background: #fff;
+  position: relative;
+}
+.container header .f_box {
+  display: flex;
+}
+.container header #logo {
+  display: flex;
+  align-items: center;
+  margin: 0 1.8%;
+}
+.container header .f_sponsor {
+  background: #000;
+  width: 88%;
+  display: flex;
+  align-items: center;
+}
+.container header .f_sponsor .flow_banner {
+  overflow: hidden;
+  display: flex;
+}
+.container header .f_sponsor .flow_banner .list {
+  display: flex;
+}
+.container header .f_sponsor .flow_banner .list > li {
+  white-space: nowrap;
+  padding: 20px 0;
+  margin: 0 7%;
+}
+.container header .f_sponsor .flow_banner .list > li a {
+  color: #FFF;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+@keyframes flowRolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.container header .my_box ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 10px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+.container header .my_box li {
+  margin: 0 2% 0 0;
+}
+.container header .my_box li:last-child {
+  margin: 0;
+}
+.container header .my_box li a {
+  font-size: 0.875rem;
+  color: #363636;
+}
+.container header .navbar-toggler {
+  position: absolute;
+  top: 71px;
+  right: 0;
+  width: 33px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 14px 4px 15px;
+  display: none;
+}
+.container header .navbar-toggler .btn_line_02 {
+  margin: 6px 0;
+}
+.container header .navbar-toggler.on .btn_line_01 {
+  transform: rotateZ(-45deg) translate3d(-6px, 3px, 0);
+  width: 25px;
+}
+.container header .navbar-toggler.on .btn_line_02 {
+  opacity: 0;
+  transform: translateX(0);
+}
+.container header .navbar-toggler.on .btn_line_03 {
+  transform: rotateZ(45deg) translate3d(-8.5px, -5px, 0);
+  width: 25px;
+}
+.container header .navbar-toggler.on .hamburger-menu:hover span.iconbar.btn_line_01 {
+  width: 25px;
+}
+.container header .navbar-toggler.on .hamburger-menu:hover span.iconbar.btn_line_03 {
+  width: 25px;
+}
+.container header .navbar-toggler .hamburger-menu {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.container header .navbar-toggler .hamburger-menu:hover span.iconbar.btn_line_01 {
+  width: 17px;
+}
+.container header .navbar-toggler .hamburger-menu:hover span.iconbar.btn_line_02 {
+  width: 25px;
+}
+.container header .navbar-toggler .hamburger-menu:hover span.iconbar.btn_line_03 {
+  width: 17px;
+}
+.container header .navbar-toggler .hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+.container header .navbar-toggler .hamburger-menu span.iconbar {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 1px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #000;
+  transition: all 0.2s ease-in-out;
+  transition: width 0.13s ease-out, transform 0.13s ease-out, opacity 0.13s ease-out;
+}
+.container header .navbar-toggler .hamburger-menu span::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+}
+.container header .navbar-toggler .hamburger-menu span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+}
+.container .aside_bg.on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 130;
+}
+.container aside {
+  grid-area: aside;
+  transition: 800ms ease;
+  float: left;
+  width: 12%;
+  height: 100%;
+}
+.container aside #close {
+  display: none;
+}
+.container aside .my_box_m {
+  display: none;
+}
+.container aside ul.first {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 10% 0 35%;
+  transition: 800ms ease;
+}
+.container aside ul > li h2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+.container aside ul > li h2 a {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.container aside ul > li h2.on {
+  border-bottom: 1px solid #ddd;
+  font-weight: 600;
+}
+.container aside ul > li h2.on a {
+  font-weight: 600;
+}
+.container aside ul > li h2.on.none {
+  border-bottom: 0;
+}
+.container aside ul > li .sub {
+  display: none;
+  margin: 0 0 25px 0;
+}
+.container aside ul > li .sub > li {
+  margin: 0 0 10px 0;
+}
+.container aside ul > li .sub > li a {
+  font-size: 0.875em;
+}
+.container main {
+  grid-area: main;
+  padding: 0 0 0 12%;
+}
+
+footer {
+  grid-area: footer;
+  background: #000;
+}
+footer .inner {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+footer .inner .l_box {
+  margin: 0 2% 0 0;
+}
+footer .inner .l_box ul {
+  display: flex;
+}
+footer .inner .l_box li {
+  margin: 0 8% 0 0;
+}
+footer .inner .l_box li a {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+footer .inner .l_box li:last-child {
+  margin: 0;
+}
+footer .inner .l_box .address {
+  margin: 50px 0 0;
+}
+footer .inner .l_box .address p {
+  color: #fff;
+}
+footer .inner .l_box .address p a {
+  color: #fff;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+footer .inner .copyright {
+  font-size: 0.75rem;
+  margin: 20px 0 0;
+  color: #fff;
+}
+footer .inner .r_box .snsbox {
+  justify-content: end;
+  margin: 20px 0 0;
+  display: flex;
+}
+
+@media (max-width: 1920px) {
+  .container header #logo {
+    margin: 0 1%;
+  }
+  .container aside ul.first {
+    padding: 0 10% 0 25%;
+  }
+}
+@media (max-width: 1600px) {
+  body.scrolled .container aside {
+    width: 15%;
+  }
+  .container {
+    grid-template-rows: 1fr 5.6fr 1fr;
+    grid-template-columns: 1fr 5.6fr;
+  }
+  .container header .f_sponsor {
+    width: 85%;
+  }
+  .container header .f_sponsor .flow_banner .list > li {
+    margin: 0 3%;
+  }
+  .container main {
+    padding: 0 0 0 15%;
+  }
+  .container aside {
+    width: 15%;
+  }
+}
+@media (max-width: 1280px) {
+  body.scrolled .container aside {
+    width: 20%;
+  }
+  .container {
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 4fr;
+  }
+  .container header .f_sponsor {
+    width: 80%;
+  }
+  .container header .f_sponsor .flow_banner .list > li {
+    padding: 0;
+  }
+  .container header .f_sponsor .flow_banner .list > li a {
+    font-size: 1rem;
+  }
+  .container aside {
+    width: 20%;
+  }
+  .container main {
+    padding: 0 0 0 20%;
+  }
+  footer .inner .l_box li {
+    margin: 0 5% 0 0;
+  }
+  footer .inner .l_box li a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  body.scrolled .container aside {
+    width: 70%;
+    top: 0;
+  }
+  .container {
+    grid-template-areas: "header header" "main main" "footer footer";
+  }
+  .container header {
+    border-bottom: 1px solid #eee;
+  }
+  .container header .navbar-toggler {
+    display: block;
+    top: 36px;
+    right: 2%;
+  }
+  .container header .f_box {
+    flex-direction: column-reverse;
+  }
+  .container header .f_sponsor {
+    width: 100%;
+  }
+  .container header .my_box {
+    display: none;
+  }
+  .container header #logo {
+    justify-content: center;
+  }
+  .container header #logo img {
+    max-width: 160px;
+  }
+  .container header .f_sponsor .flow_banner .list > li a {
+    padding: 5px 0;
+  }
+  .container aside {
+    position: fixed;
+    right: -70%;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 70%;
+    background-color: #fff;
+    z-index: 150;
+    transition: 300ms ease;
+  }
+  .container aside.on {
+    right: 0;
+  }
+  .container aside .my_box_m {
+    display: flex;
+    margin: 50px 0 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  .container aside .my_box_m > li {
+    text-align: center;
+    width: 25%;
+    padding: 10px 0;
+    border-right: 1px solid #eee;
+  }
+  .container aside .my_box_m > li:last-child {
+    border-right: 0;
+  }
+  .container aside #close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  .container aside #close:after {
+    content: "×";
+    font-size: 2rem;
+  }
+  .container aside ul.first {
+    padding: 0;
+  }
+  .container aside ul.first h2 {
+    margin: 0;
+  }
+  .container aside ul.first > li {
+    border-bottom: 1px solid #eee;
+  }
+  .container aside ul.first > li h2 {
+    padding: 20px;
+    margin: 0;
+  }
+  .container aside ul.first > li .sub {
+    background: #eee;
+    margin: 0;
+    padding: 10px 0;
+  }
+  .container aside ul.first > li .sub li a {
+    padding: 10px 40px;
+  }
+  .container main {
+    padding: 0;
+  }
+}
+@media (max-width: 900px) {
+  footer .inner {
+    flex-direction: column-reverse;
+  }
+  footer .inner .l_box .address {
+    margin: 20px 0 0;
+  }
+  footer .inner .r_box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+  }
+  footer .inner .r_box .snsbox {
+    margin: 0;
+  }
+  footer .inner .r_box .snsbox li {
+    width: 40px;
+  }
+  footer .inner .r_box #logo {
+    max-width: 150px;
+  }
+}
+@media (max-width: 768px) {
+  footer .inner .l_box li {
+    margin: 0px 3% 0px 0px;
+  }
+  footer .inner .l_box li a {
+    font-size: 0.8rem;
+  }
+  footer .inner .l_box .address p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  body.scrolled .container aside {
+    width: 100%;
+  }
+  .container aside {
+    width: 100%;
+    right: -100%;
+  }
+}/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,87 @@
+
+
+@mixin container-xl {
+    padding: 0 100px;
+ }
+ 
+ @mixin container-lg {
+     padding: 0 50px;
+  }
+  
+ @mixin container-sm {
+     padding: 0 30px;
+ }
+ @mixin container-sl {
+     padding: 0 20px;
+ }
+ 
+ 
+ @mixin clearfix {
+     content:"";
+     clear: both;
+     display: block;
+  }
+ 
+ 
+ @mixin flex_center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ @mixin flex_around {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ @mixin flex_start {
+     display: flex;
+     justify-content: flex-start;
+     
+ }
+ @mixin flex_end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+ @mixin flex_between {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ @mixin d_block {
+    display: block;
+}
+ 
+ //여백
+ @mixin margin_tb {
+     margin: 100px 0;
+ }
+ 
+ 
+ 
+ @mixin inner{
+    width: 90%;
+    margin: 0 auto;
+ }
+ 
+ 
+ 
+ 
+ 
+
+ $breakpoint_desktop_1920:1920px;
+ $breakpoint_desktop_1600:1600px;
+ $breakpoint_desktop_1440:1440px;
+ $breakpoint_desktop_1360:1360px;
+ $breakpoint_desktop_1280:1280px;
+ $breakpoint_tablet_1024:1024px;
+ $breakpoint_tablet_991:991px;
+ $breakpoint_tablet_900:900px;
+ $breakpoint_tablet_768:768px;
+ $breakpoint_mobile_640:640px;
+ $breakpoint_mobile_540:540px;
+ $breakpoint_mobile_480:480px;
+ $breakpoint_mobile_430:430px;
+ $breakpoint_mobile_414:414px;
+ $breakpoint_mobile_360:360px;

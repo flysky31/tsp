@@ -1,0 +1,269 @@
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+    box-sizing: border-box;
+}
+
+body {
+	line-height: 1.5;
+    font-family: 'Pretendard';
+    min-width: 320px;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: #000;
+}
+
+
+ol, ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    font-style: normal;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+select {
+    -webkit-appearance:none; 
+    -moz-appearance:none;
+    appearance:none 
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    
+}
+h2,b{
+    font-weight: 800;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+figure{
+    margin: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+/* animation */
+
+.s_line {
+    display: inline-block;
+}
+
+.s_line.vertical {
+    width: 1px;
+    height: 55px;
+    background-color: #BBBBBB;
+}
+
+.s_line.horizontal {
+    width: 15px;
+    height: 2px;
+    vertical-align: middle;
+    background-color: #6c82c4;
+}
+
+.ani-item,.ani-item .ani-inside {
+    opacity: 0;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.ani-vertical {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+}
+.ani-scale {
+    opacity: 0;
+    transform: scale(1.1, 1.1);
+    -webkit-transition: transform 2500ms ease-in-out;
+    -moz-transition: transform 2500ms ease-in-out;
+    -ms-transition: transform 2500ms ease-in-out;
+    -o-transition: transform 2500ms ease-in-out;
+    transition: transform 2500ms ease-in-out;
+   
+}
+
+
+.ani-hor {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+    -moz-transform: translateX(10%);
+    -ms-transform: translateX(10%);
+    -o-transform: translateX(10%);
+    transform: translateX(10%);
+}
+
+.ani-lor {
+    opacity: 0;
+    -webkit-transform: translateX(-10%);
+    -moz-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+    -o-transform: translateX(-10%);
+    transform: translateX(-10%);
+}
+.s_line[class*=ani-] {
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    -o-transform: scale(0,0);
+    transform: scale(0,0);
+}
+
+.s_line.vertical[class*=ani-] {
+    -webkit-transform-origin: center top;
+    -moz-transform-origin: center top;
+    -ms-transform-origin: center top;
+    -o-transform-origin: center top;
+    transform-origin: center top;
+}
+
+.s_line.horizontal[class*=ani-] {
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.ani-item.done,.ani-item.done .ani-inside {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+
+.ani-scale.vertical[class*=ani-] {
+    opacity: 1;
+    transform: scale(1, 1) rotate(0deg);
+    -webkit-transition: transform 2500ms ease-in-out;
+    -moz-transition: transform 2500ms ease-in-out;
+    -ms-transition: transform 2500ms ease-in-out;
+    -o-transition: transform 2500ms ease-in-out;
+    transition: transform 2500ms ease-in-out;
+}
+
+
+.ani-item.d100,.ani-item .d100 {
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+}
+
+.ani-item.d200,.ani-item .d200 {
+    -webkit-transition-delay: 200ms;
+    -moz-transition-delay: 200ms;
+    -o-transition-delay: 200ms;
+    transition-delay: 200ms;
+}
+
+.ani-item.d300,.ani-item .d300 {
+    -webkit-transition-delay: 300ms;
+    -moz-transition-delay: 300ms;
+    -o-transition-delay: 300ms;
+    transition-delay: 300ms;
+}
+
+.ani-item.d400,.ani-item .d400 {
+    -webkit-transition-delay: 400ms;
+    -moz-transition-delay: 400ms;
+    -o-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+.ani-item.d500,.ani-item .d500 {
+    -webkit-transition-delay: 500ms;
+    -moz-transition-delay: 500ms;
+    -o-transition-delay: 500ms;
+    transition-delay: 500ms;
+}
+
+.ani-item.d600,.ani-item .d600 {
+    -webkit-transition-delay: 600ms;
+    -moz-transition-delay: 600ms;
+    -o-transition-delay: 600ms;
+    transition-delay: 600ms;
+}
+
+.ani-item.d700,.ani-item .d700 {
+    -webkit-transition-delay: 700ms;
+    -moz-transition-delay: 700ms;
+    -o-transition-delay: 700ms;
+    transition-delay: 700ms;
+}
+
+.ani-item.d800,.ani-item .d800 {
+    -webkit-transition-delay: 800ms;
+    -moz-transition-delay: 800ms;
+    -o-transition-delay: 800ms;
+    transition-delay: 800ms;
+}
+
+.ani-item.d900,.ani-item .d900 {
+    -webkit-transition-delay: 900ms;
+    -moz-transition-delay: 900ms;
+    -o-transition-delay: 900ms;
+    transition-delay: 900ms;
+}
+
+.ani-item.d1000,.ani-item .d1000 {
+    -webkit-transition-delay: 1000ms;
+    -moz-transition-delay: 1000ms;
+    -o-transition-delay: 1000ms;
+    transition-delay: 1000ms;
+}
+
+.ani-item.d1500,.ani-item .d1500 {
+    -webkit-transition-delay: 1500ms;
+    -moz-transition-delay: 1500ms;
+    -o-transition-delay: 1500ms;
+    transition-delay: 1500ms;
+}
+
+.ani-item.d2000,.ani-item .d2000 {
+    -webkit-transition-delay: 2000ms;
+    -moz-transition-delay: 2000ms;
+    -o-transition-delay: 2000ms;
+    transition-delay: 2000ms;
+}

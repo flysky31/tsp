@@ -1,0 +1,96 @@
+@import "./variables";
+
+
+@mixin breakpoint_desktop_1920 {
+    @media (max-width: #{$breakpoint_desktop_1920}) {
+      @content;
+
+    }
+  }
+  
+@mixin breakpoint_desktop_1600 {
+    @media (max-width: #{$breakpoint_desktop_1600}) {
+      @content;
+
+    }
+  }
+  
+  
+  @mixin breakpoint_desktop_1440 {
+      @media (max-width: #{$breakpoint_desktop_1440}) {
+        @content;
+      }
+    }
+    
+  
+    
+  @mixin breakpoint_desktop_1360 {
+    @media (max-width: #{$breakpoint_desktop_1360}) {
+      @content;
+    }
+  }
+  
+  
+    @mixin breakpoint_desktop_1280 {
+      @media (max-width: #{$breakpoint_desktop_1280}) {
+        @content;
+      }
+    }
+    
+
+    
+    @mixin breakpoint_tablet_1024 {
+      @media (max-width: #{$breakpoint_tablet_1024}) {
+        @content;
+      }
+    }    
+    @mixin breakpoint_tablet_991 {
+      @media (max-width: #{$breakpoint_tablet_991}) {
+        @content;
+      }
+    }    
+    @mixin breakpoint_tablet_900 {
+      @media (max-width: #{$breakpoint_tablet_900}) {
+        @content;
+      }
+    }    
+
+
+
+
+    @mixin breakpoint_tablet_768 {
+      @media (max-width: #{$breakpoint_tablet_768}) {
+        @content;
+      }
+    }    
+    @mixin breakpoint_mobile_640 {
+      @media (max-width: #{$breakpoint_mobile_640}) {
+        @content;
+      }
+    }    
+
+    @mixin breakpoint_mobile_540 {
+        @media (max-width: #{$breakpoint_mobile_540}) {
+          @content;
+        }
+      }    
+
+
+      
+    @mixin breakpoint_mobile_480{
+      @media (max-width: #{$breakpoint_mobile_480}) {
+        @content;
+      }
+    }
+
+    @mixin breakpoint_mobile_430{
+      @media (max-width: #{$breakpoint_mobile_430}) {
+        @content;
+      }
+    }
+    
+    @mixin breakpoint_mobile_414{
+      @media (max-width: #{$breakpoint_mobile_414}) {
+        @content;
+      }
+    }    
