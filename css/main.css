@@ -1,5 +1,5 @@
 #main_visual {
-  background: url("/img/main_visual.jpg") no-repeat center/cover;
+  background: url("../img/main_visual.jpg") no-repeat center/cover;
   width: 100%;
   height: calc(100vh - 110px);
 }
@@ -118,7 +118,7 @@
 }
 
 #depth02 {
-  background: url("/img/center_banner.jpg") no-repeat center/cover;
+  background: url("../img/center_banner.jpg") no-repeat center/cover;
   width: 100%;
   padding: 60px 0;
 }
